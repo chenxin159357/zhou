@@ -1,0 +1,19 @@
+package com;
+import java.util.Scanner;
+public class abc {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);    //创建Scanner对象
+        //println和print的区别：println输出信息后会换行，而print不会
+        System.out.print("请输入：");
+        int score=input.nextInt();//获取用户信息并保存在变量中
+        int count=0;//加分的次数
+        System.out.println("加分前的成绩："+score);
+        while (score<60){
+            score++;
+            count++;
+        }
+        System.out.println("加分后的成绩："+score);
+        System.out.println("共加："+count+"次！");
+
+    }
+}
