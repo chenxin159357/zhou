@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListTest {
+    public List courseToSelect;
+    public ListTest(){
+        this.courseToSelect=new ArrayList();
+    }
+    public void testAdd(){
+        Course crl=new Course("1","数据结构");
+        courseToSelect.add(crl);
+        Course temp=(Course)courseToSelect.get(0);
+        System.out.println("添加了课程：\t"+temp.getId()+temp.getName());
+    }
+    public static void main(String[]args){
+        ListTest lt=new ListTest();
+        lt.testAdd();
+
+    }
+}
